@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -135,7 +136,7 @@ p {
     border-radius: 0.7rem;
     color: black;
     font-size:large ;
-    width:35rem;
+    width:37rem;
     flex-direction: row;
 
     /* width: max-content; */
@@ -145,9 +146,10 @@ p {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .form {
+        margin-top: 1.2rem;
         padding: 1.5rem;
-        background-color: hidden;
         background-color: rgb(82, 82, 106);
+
     }
 
     .circle {
@@ -163,13 +165,21 @@ p {
 
     }
     .card {
-        flex: 1 1 100%; /* Single card per row */
-        max-width: 100%;
+        /* flex: 1 1 100%; */
+        /* max-width: 90%; */
+        flex-direction: column;
+        border-radius: 1rem;
     }
-
+    h1,p{
+        margin-top: 1.5rem;
+    }
     .input {
-        flex-direction: column; /* Stack input and button */
+        flex-direction: column;
         gap: 0.5rem;
+    }
+    .html,body{
+        overflow-x: hidden;
+        width: 100%;
     }
 
     .name, .search {
